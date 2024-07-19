@@ -16,12 +16,15 @@ import org.openqa.selenium.interactions.Actions;
 public class ActionsTest {
 	static WebDriver driver;
 	
+	
 	public static void launchBrowser() {
+		System.out.println();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
 	
 	public static void launchUrl(String url) {
+		System.out.println();
 		driver.get(url);
 	}
 	
